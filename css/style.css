@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+main {
+    margin-top: 60px;
+  }
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-brand img:hover {
+    opacity: 0.4;
+}
+
+li.nav-item {
+    position: relative;
+}
+
+@keyframes fill {
+    from {width: 0;}
+    to {width: 100%;}
+  }
+
+@media (max-width: 992px) {
+    #navbarNav li.nav-item > a.nav-link:hover::after,
+    #navbarNav li.nav-item > a.nav-link.active::after {
+      bottom: 2px;
+    }
+  }
